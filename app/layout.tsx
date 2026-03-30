@@ -1,7 +1,6 @@
 import type { Metadata, Viewport } from 'next'
 import { Plus_Jakarta_Sans, Geist_Mono } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
-import { I18nProvider } from '@/lib/i18n/context'
 import './globals.css'
 
 const plusJakartaSans = Plus_Jakarta_Sans({ 
@@ -54,9 +53,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${plusJakartaSans.variable} ${geistMono.variable}`}>
       <body className="font-sans antialiased">
-        <I18nProvider>
-          {children}
-        </I18nProvider>
+        {children}
         <Analytics />
       </body>
     </html>
