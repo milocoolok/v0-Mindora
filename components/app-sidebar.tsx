@@ -27,55 +27,52 @@ import {
   Settings,
 } from 'lucide-react'
 import { cn } from '@/lib/utils'
-import { useI18n } from '@/lib/i18n'
-import { mockUser } from '@/lib/mock-data'
+
+const navigationItems = [
+  {
+    title: 'Dashboard',
+    href: '/dashboard',
+    icon: LayoutDashboard,
+  },
+  {
+    title: 'Goals',
+    href: '/goals',
+    icon: Target,
+  },
+  {
+    title: 'AI Advice',
+    href: '/ai-advice',
+    icon: Sparkles,
+  },
+  {
+    title: 'Personality',
+    href: '/personality',
+    icon: Brain,
+  },
+  {
+    title: 'Life Balance',
+    href: '/life-balance',
+    icon: PieChart,
+  },
+  {
+    title: 'Career',
+    href: '/career',
+    icon: Compass,
+  },
+  {
+    title: 'Languages',
+    href: '/languages',
+    icon: Languages,
+  },
+  {
+    title: 'Blog',
+    href: '/blog',
+    icon: BookOpen,
+  },
+]
 
 export function AppSidebar() {
   const pathname = usePathname()
-  const { t } = useI18n()
-
-  const navigationItems = [
-    {
-      title: t.dashboard,
-      href: '/dashboard',
-      icon: LayoutDashboard,
-    },
-    {
-      title: t.goals,
-      href: '/goals',
-      icon: Target,
-    },
-    {
-      title: t.doraAdvice,
-      href: '/dora-advice',
-      icon: Sparkles,
-    },
-    {
-      title: t.personality,
-      href: '/personality',
-      icon: Brain,
-    },
-    {
-      title: t.lifeBalance,
-      href: '/life-balance',
-      icon: PieChart,
-    },
-    {
-      title: t.career,
-      href: '/career',
-      icon: Compass,
-    },
-    {
-      title: t.languages,
-      href: '/languages',
-      icon: Languages,
-    },
-    {
-      title: t.blog,
-      href: '/blog',
-      icon: BookOpen,
-    },
-  ]
 
   return (
     <Sidebar className="border-r border-sidebar-border">
@@ -95,7 +92,7 @@ export function AppSidebar() {
               {navigationItems.map((item) => {
                 const isActive = pathname === item.href || pathname?.startsWith(`${item.href}/`)
                 return (
-                  <SidebarMenuItem key={item.href}>
+                  <SidebarMenuItem key={item.title}>
                     <SidebarMenuButton
                       asChild
                       isActive={isActive}
@@ -121,12 +118,12 @@ export function AppSidebar() {
         <div className="flex items-center gap-3 rounded-xl bg-muted/50 p-3">
           <Avatar className="h-10 w-10 border-2 border-primary/20">
             <AvatarFallback className="bg-primary/10 text-primary font-semibold">
-              {mockUser.name.charAt(0)}
+              SC
             </AvatarFallback>
           </Avatar>
           <div className="flex-1 min-w-0">
-            <p className="text-sm font-medium text-foreground truncate">{mockUser.name}</p>
-            <p className="text-xs text-muted-foreground truncate">{t.premiumMember}</p>
+            <p className="text-sm font-medium text-foreground truncate">Sarah Chen</p>
+            <p className="text-xs text-muted-foreground truncate">Premium member</p>
           </div>
           <div className="flex gap-1">
             <button className="p-2 rounded-lg hover:bg-background transition-colors">

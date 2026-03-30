@@ -5,8 +5,8 @@ import type {
 
 export const mockUser: User = {
   id: '1',
-  name: 'Lakshan',
-  email: 'lakshan@example.com',
+  name: 'Sarah Chen',
+  email: 'sarah@example.com',
   avatar: '/avatar.jpg',
   zodiacSign: 'libra',
   mbtiType: 'INFJ',
@@ -131,66 +131,7 @@ export const mockBlogPosts: BlogPost[] = [
   },
 ]
 
-// Daily English words with IPA, Chinese meaning, explanation and example
-export const dailyEnglishWords = [
-  {
-    id: '1',
-    word: 'Resilience',
-    ipa: '/rɪˈzɪliəns/',
-    chineseMeaning: '韧性，复原力',
-    englishExplanation: 'The capacity to recover quickly from difficulties; toughness',
-    example: 'Her resilience helped her bounce back from the setback.',
-    relatedQuestion: 'Can you recall a time when you showed resilience? How did it shape you?',
-  },
-  {
-    id: '2',
-    word: 'Perseverance',
-    ipa: '/ˌpɜːsɪˈvɪərəns/',
-    chineseMeaning: '坚持不懈，毅力',
-    englishExplanation: 'Persistence in doing something despite difficulty or delay in achieving success',
-    example: 'Success requires both talent and perseverance.',
-    relatedQuestion: 'What goal have you achieved through perseverance?',
-  },
-  {
-    id: '3',
-    word: 'Gratitude',
-    ipa: '/ˈɡrætɪtjuːd/',
-    chineseMeaning: '感激，感恩',
-    englishExplanation: 'The quality of being thankful; readiness to show appreciation',
-    example: 'Practicing gratitude daily can improve your mental health.',
-    relatedQuestion: 'What are three things you feel grateful for today?',
-  },
-  {
-    id: '4',
-    word: 'Empathy',
-    ipa: '/ˈempəθi/',
-    chineseMeaning: '同理心，共情',
-    englishExplanation: 'The ability to understand and share the feelings of another',
-    example: 'A good leader demonstrates empathy towards their team.',
-    relatedQuestion: 'How do you practice empathy in your daily life?',
-  },
-  {
-    id: '5',
-    word: 'Integrity',
-    ipa: '/ɪnˈteɡrəti/',
-    chineseMeaning: '正直，诚信',
-    englishExplanation: 'The quality of being honest and having strong moral principles',
-    example: 'He is known for his integrity in business dealings.',
-    relatedQuestion: 'When was a time you had to stand by your integrity?',
-  },
-  {
-    id: '6',
-    word: 'Mindfulness',
-    ipa: '/ˈmaɪndfʊlnəs/',
-    chineseMeaning: '正念，专注当下',
-    englishExplanation: 'A mental state achieved by focusing awareness on the present moment',
-    example: 'Mindfulness meditation can reduce stress and anxiety.',
-    relatedQuestion: 'How can you bring more mindfulness into your daily routine?',
-  },
-]
-
 export const mockVocabulary: VocabularyCard[] = [
-  // English
   {
     id: '1',
     word: 'Resilience',
@@ -207,15 +148,6 @@ export const mockVocabulary: VocabularyCard[] = [
     language: 'english',
     mastered: false,
   },
-  {
-    id: '5',
-    word: 'Perseverance',
-    translation: 'Persistence despite difficulties',
-    example: 'Perseverance is key to achieving your goals.',
-    language: 'english',
-    mastered: false,
-  },
-  // Chinese
   {
     id: '3',
     word: '成长',
@@ -235,68 +167,20 @@ export const mockVocabulary: VocabularyCard[] = [
     mastered: true,
   },
   {
+    id: '5',
+    word: 'Perseverance',
+    translation: 'Persistence despite difficulties',
+    example: 'Perseverance is key to achieving your goals.',
+    language: 'english',
+    mastered: false,
+  },
+  {
     id: '6',
     word: '平衡',
     translation: 'Balance / Equilibrium',
     pronunciation: 'píng héng',
     example: '工作与生活的平衡很重要。',
     language: 'chinese',
-    mastered: false,
-  },
-  // Sinhala
-  {
-    id: '7',
-    word: 'ස්තූතියි',
-    translation: 'Thank you',
-    pronunciation: 'stūtiyi',
-    example: 'ඔබට ස්තූතියි (Thank you)',
-    language: 'sinhala',
-    mastered: false,
-  },
-  {
-    id: '8',
-    word: 'ආදරය',
-    translation: 'Love',
-    pronunciation: 'ādaraya',
-    example: 'ආදරය සැමවිටම ජය ගනී (Love always wins)',
-    language: 'sinhala',
-    mastered: false,
-  },
-  {
-    id: '9',
-    word: 'සතුට',
-    translation: 'Happiness',
-    pronunciation: 'satuṭa',
-    example: 'සතුට තුළින් ජීවිතය ලස්සනයි (Life is beautiful with happiness)',
-    language: 'sinhala',
-    mastered: false,
-  },
-  // Russian
-  {
-    id: '10',
-    word: 'Успех',
-    translation: 'Success',
-    pronunciation: 'uspekh',
-    example: 'Успех приходит к тем, кто работает. (Success comes to those who work)',
-    language: 'russian',
-    mastered: false,
-  },
-  {
-    id: '11',
-    word: 'Счастье',
-    translation: 'Happiness',
-    pronunciation: 'schastʹye',
-    example: 'Счастье в мелочах. (Happiness is in the little things)',
-    language: 'russian',
-    mastered: false,
-  },
-  {
-    id: '12',
-    word: 'Мечта',
-    translation: 'Dream',
-    pronunciation: 'mechta',
-    example: 'Следуй за своей мечтой. (Follow your dream)',
-    language: 'russian',
     mastered: false,
   },
 ]
@@ -435,135 +319,3 @@ export const zodiacInsights = {
     dailyTip: 'Channel your energy into a meaningful project. Your passion is contagious.',
   },
 }
-
-// 16 Personality Questions for MBTI-style assessment
-export const personalityQuestions = [
-  {
-    id: 1,
-    question: 'At a social gathering, you typically:',
-    options: [
-      { text: 'Talk to many people, including strangers', type: 'E' },
-      { text: 'Talk mainly to people you already know', type: 'I' },
-    ],
-  },
-  {
-    id: 2,
-    question: 'You are more drawn to:',
-    options: [
-      { text: 'Concrete facts and real experiences', type: 'S' },
-      { text: 'Abstract theories and possibilities', type: 'N' },
-    ],
-  },
-  {
-    id: 3,
-    question: 'When making decisions, you tend to:',
-    options: [
-      { text: 'Analyze pros and cons logically', type: 'T' },
-      { text: 'Consider how it affects people emotionally', type: 'F' },
-    ],
-  },
-  {
-    id: 4,
-    question: 'Your preferred work style is:',
-    options: [
-      { text: 'Plan ahead and follow schedules', type: 'J' },
-      { text: 'Stay flexible and adapt as you go', type: 'P' },
-    ],
-  },
-  {
-    id: 5,
-    question: 'After a long week, you recharge by:',
-    options: [
-      { text: 'Going out with friends or to social events', type: 'E' },
-      { text: 'Spending quiet time alone or with close friends', type: 'I' },
-    ],
-  },
-  {
-    id: 6,
-    question: 'When learning something new, you prefer:',
-    options: [
-      { text: 'Step-by-step practical instructions', type: 'S' },
-      { text: 'Understanding the big picture first', type: 'N' },
-    ],
-  },
-  {
-    id: 7,
-    question: 'In conflicts, you typically:',
-    options: [
-      { text: 'Focus on being fair and objective', type: 'T' },
-      { text: 'Focus on maintaining harmony', type: 'F' },
-    ],
-  },
-  {
-    id: 8,
-    question: 'You feel most comfortable when:',
-    options: [
-      { text: 'Things are decided and settled', type: 'J' },
-      { text: 'Options are kept open', type: 'P' },
-    ],
-  },
-  {
-    id: 9,
-    question: 'In group discussions, you usually:',
-    options: [
-      { text: 'Speak up frequently and share ideas readily', type: 'E' },
-      { text: 'Listen more and share when asked', type: 'I' },
-    ],
-  },
-  {
-    id: 10,
-    question: 'You are more interested in:',
-    options: [
-      { text: 'What is actual and present', type: 'S' },
-      { text: 'What could be possible in the future', type: 'N' },
-    ],
-  },
-  {
-    id: 11,
-    question: 'When giving feedback, you tend to be:',
-    options: [
-      { text: 'Direct and honest, even if it might hurt', type: 'T' },
-      { text: 'Diplomatic and sensitive to feelings', type: 'F' },
-    ],
-  },
-  {
-    id: 12,
-    question: 'Your workspace is usually:',
-    options: [
-      { text: 'Organized and tidy', type: 'J' },
-      { text: 'A bit messy but you know where things are', type: 'P' },
-    ],
-  },
-  {
-    id: 13,
-    question: 'You find small talk:',
-    options: [
-      { text: 'Enjoyable and energizing', type: 'E' },
-      { text: 'Draining and prefer deep conversations', type: 'I' },
-    ],
-  },
-  {
-    id: 14,
-    question: 'You trust more in:',
-    options: [
-      { text: 'Your direct experience and observations', type: 'S' },
-      { text: 'Your gut feelings and intuition', type: 'N' },
-    ],
-  },
-  {
-    id: 15,
-    question: 'You value more:',
-    options: [
-      { text: 'Truth and justice', type: 'T' },
-      { text: 'Compassion and mercy', type: 'F' },
-    ],
-  },
-  {
-    id: 16,
-    question: 'When starting a project, you prefer to:',
-    options: [
-      { text: 'Make a detailed plan before starting', type: 'J' },
-      { text: 'Dive in and figure it out along the way', type: 'P' },
-    ],
-  },
-]
