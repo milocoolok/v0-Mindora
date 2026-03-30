@@ -1,16 +1,16 @@
-import type { 
-  User, Goal, LifeArea, BlogPost, VocabularyCard, 
-  AIAdviceTopic, CareerPath, PersonalityInsight 
+import type {
+  User, Goal, LifeArea, BlogPost, VocabularyCard,
+  AIAdviceTopic, CareerPath, PersonalityInsight
 } from './types'
 
 export const mockUser: User = {
   id: '1',
-  name: 'Sarah Chen',
-  email: 'sarah@example.com',
+  name: 'Milo Nguyen',
+  email: 'Milo@example.com',
   avatar: '/avatar.jpg',
-  zodiacSign: 'libra',
-  mbtiType: 'INFJ',
-  joinedAt: new Date('2024-01-15'),
+  zodiacSign: 'aries',
+  mbtiType: 'ISTP',
+  joinedAt: new Date('2026-03-30'),
 }
 
 export const mockGoals: Goal[] = [
